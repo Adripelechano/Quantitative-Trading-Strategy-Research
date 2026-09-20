@@ -9,6 +9,7 @@ The current experiments cover approximately four months of data for the first no
 
 ## Repository Structure
 * **README.md** - Project overview, methodology, results, and research conclusions.
+* **requirements.txt** - Python dependencies and environment specifications.
 * **01_trend_indicators_backtest.ipynb** - Backtesting of trend strategies and indicator configurations.
 * **02_market_structure_backtest.ipynb** - Backtesting of liquidity sweeps and SMC-based market structure strategies.
 
