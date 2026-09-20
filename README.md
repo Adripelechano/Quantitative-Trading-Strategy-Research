@@ -18,6 +18,8 @@ This project requires an active MetaTrader 5 terminal installed and running on a
 
 **Note for macOS / Linux Users:** The official `MetaTrader5` package is exclusively compatible with Windows operating systems. If you wish to run these backtests on macOS, Linux, or cloud environments like Google Colab, you will need to export the market data to a `.csv` file first and modify the data loading functions to read from that file.
 
+However, all plots and statistics are fully visible directly within the `.ipynb` notebook file. This means you do **not** need MetaTrader 5 or Windows installed just to inspect the backtest results and strategy performance.
+
 ## Research & backtesting pipeline
 
 The research follows a common experimental workflow:
