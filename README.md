@@ -85,55 +85,44 @@ All four configurations produced positive results during the observed sample, al
 * GOLDEN_ZONE_075 produced a more moderate 6.05% return, while showing the highest profit factor (1.40) and Sharpe ratio (4.20) together with the lowest maximum drawdown (-0.70%) from all the tested configurations.
 * FVG showed a similar risk-adjusted profile, with a 3.53 Sharpe ratio, 1.29 profit factor, and -1.14% maximum drawdown.
 
-An important characteristic across the experiments is the relatively low win rate, ranging from 28.7% to 31.8%. This indicates that profitability is primarily because of the relationship between winning and losing trade sizes rather than by a majority of winning trades.
+An important characteristic across the experiments is the relatively low win rate, ranging from 28.7% to 31.8%. This indicates that profitability is because of the relationship between winning and losing trade sizes rather than by a majority of winning trades.
 
 The large difference in trade counts is important when comparing these configurations. In particular, OB_DECISIONAL generates 2,636 trades, compared with 440–513 trades for several of the other configurations. Consequently, total return should not be interpreted independently of trading frequency, drawdown, transaction costs, and statistical reliability.
 
-The current results are therefore better interpreted as evidence of different behavioral characteristics rather than as a definitive ranking of the strategies.
+The current results are therefore better interpreted as evidence of different characteristics rather than as a definitive ranking of the strategies.
 
-## Key Research Considerations
+## Key conclusions:
 
-The experiments highlight several important considerations for systematic trading research:
+The experiments overall highlight several important considerations for systematic trading research:
 
-Market structure signals are highly sensitive to timeframe and market conditions.
-Low win rates can still produce positive expectancy when the payoff distribution is asymmetric.
-Risk-adjusted metrics provide additional information beyond cumulative return.
-Trading frequency strongly affects the interpretation of historical returns.
-Parameter and timeframe selection can introduce significant overfitting risk.
+1. Market structure signals are highly sensitive to timeframe and market conditions.
+2. Low win rates can still produce positive expectancy when the payoff distribution is asymmetric.
+3. Risk-adjusted metrics provide additional information beyond cumulative return.
+4. Trading frequency strongly affects the interpretation of historical returns.
+5. Parameter and timeframe selection can introduce overfitting risk.
 
-The results should therefore be evaluated across longer periods and different market regimes before drawing conclusions about robustness.
+The results should therefore be evaluated across longer periods and different market regimes before reaching to conclusions about robustness.
 
 ## Backtesting Limitations
 
 The current experiments represent an initial research stage. Several aspects require further development before the results could be considered realistic representations of live trading:
-
-Transaction costs
-Slippage
-Execution latency
-Out-of-sample testing
-Walk-forward validation
-Parameter sensitivity analysis
-Statistical significance
-Multiple market regimes
-Portfolio-level risk allocation
+1. Transaction costs
+2. Slippage
+3. Execution latency
+4. Parameter senssitivity analysis
+5. Statistical significance
+6. Multiple market regimes
+7. Portfolio risk allocation
 
 In particular, the current one-month sample is too short to distinguish between a persistent structural effect and a result specific to the observed market conditions.
 
-## Future Work
-
-Extend the historical sample across multiple market regimes.
-
-Introduce realistic transaction costs and slippage.
-
-Perform out-of-sample and walk-forward testing.
-
-Analyze parameter sensitivity and robustness.
-
-Implement multi-timeframe market-structure filters.
-
-Investigate volatility-adjusted position sizing.
-
-Analyze cross-instrument correlations.
+## Future work
+Based on the previous limitations, the future aims should be:
+1. Extend the historical sample across multiple market regimes.
+2. Introduce realistic transaction costs and slippage.
+3. Analyze parameter sensitivity and optimization with machine learning algorythms.
+4. Implement market structure filters, based on volatility and market behaviour.
+5. Investigate cross instrument correlations.
 
 Develop portfolio-level allocation methods.
 
