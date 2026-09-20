@@ -56,30 +56,17 @@ The notebook contains two main research blocks:
 
 The first experiment investigates liquidity sweep setups on a 15-minute timeframe.
 
-Results
-Metric	Result
-Total Return	-0.36%
-PnL	-$35.66
-Win Rate	24.2%
-Profit Factor	0.96
-Maximum Drawdown	-1.69%
-Sharpe Ratio	-0.39
-Diagnosis
+The strategy produced negative expectancy during the sample, but also relatively low drawdown.
+A possible explanation is the sensitivity of lower timeframe sweeps to market noise. Candle wicks may represent short term volatility rather than real liquidity events, resulting in a high number of false signals and a low win rate.
 
-The strategy produced slightly negative expectancy during the sample, while maintaining relatively low drawdown.
-
-A possible explanation is the sensitivity of lower-timeframe sweeps to market noise. Candle wicks may represent short-term volatility rather than meaningful liquidity events, resulting in a high number of false signals and a low win rate.
-
-The 0.96 profit factor is close to breakeven, suggesting that relatively small changes in signal filtering could materially affect performance.
-
-Research Hypotheses
+The 0.96 profit factor is close to breakeven, suggesting that relatively small changes in signal filtering could probably affect performance.
 
 Several modifications could be investigated:
 
-Higher-timeframe bias: restrict sweeps according to H4/D1 market direction.
-Volume confirmation: require increased volume during the sweep.
-Dynamic thresholds: replace fixed swing windows with volatility-adjusted thresholds such as ATR.
-Multi-timeframe confirmation: combine higher-timeframe structure with lower-timeframe execution.
+* Higher-timeframe bias: restrict sweeps according to H4/D1 market direction.
+* Volume confirmation: require increased volume during the sweep.
+* Dynamic thresholds: replace fixed swing windows with volatility-adjusted thresholds such as ATR.
+* Multi-timeframe confirmation: combine higher-timeframe structure with lower-timeframe execution.
 
 These hypotheses should be evaluated on separate validation periods rather than optimized exclusively on the current sample.
 
