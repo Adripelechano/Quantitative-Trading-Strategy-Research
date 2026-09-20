@@ -74,37 +74,24 @@ These hypotheses should be evaluated on separate validation periods rather than 
 
 The second experiment evaluates several SMC-based structures:
 
-Order Block Extremes (OB_EXTREM)
-Decisional Order Blocks (OB_DECISIONAL)
-Fair Value Gaps (FVG)
-Golden Zone (GOLDEN_ZONE_075)
-Results
-Strategy	Trades	Return	Win Rate	Profit Factor	Max DD	Sharpe
-OB_EXTREM	457	3.38%	28.7%	1.21	-0.88%	2.30
-OB_DECISIONAL	2,636	20.39%	28.9%	1.22	-3.50%	3.61
-FVG	513	5.15%	30.0%	1.29	-1.14%	3.53
-GOLDEN_ZONE_075	440	6.05%	31.8%	1.40	-0.70%	4.20
-Interpretation
+* Order Block Extremes (OB_EXTREM)
+* Decisional Order Blocks (OB_DECISIONAL)
+* Fair Value Gaps (FVG)
+* Golden Zone (GOLDEN_ZONE_075)
 
-All four configurations produced positive results during the observed sample, although their performance profiles differ considerably.
+All four configurations produced positive results during the observed sample, although their performance differ:
 
-OB_DECISIONAL generated the largest absolute return at 20.39%, but also exhibited the largest drawdown (-3.50%) and substantially higher trading frequency.
+* OB_DECISIONAL generated the largest return at 20.39%, but also exhibited the largest drawdown (-3.50%) and higher trading frequency.
+* GOLDEN_ZONE_075 produced a more moderate 6.05% return, while showing the highest profit factor (1.40) and Sharpe ratio (4.20) together with the lowest maximum drawdown (-0.70%) from all the tested configurations.
+* FVG showed a similar risk-adjusted profile, with a 3.53 Sharpe ratio, 1.29 profit factor, and -1.14% maximum drawdown.
 
-GOLDEN_ZONE_075 produced a more moderate 6.05% return, while achieving the highest profit factor (1.40) and Sharpe ratio (4.20) together with the lowest maximum drawdown (-0.70%) among the tested configurations.
+An important characteristic across the experiments is the relatively low win rate, ranging from 28.7% to 31.8%. This indicates that profitability is primarily because of the relationship between winning and losing trade sizes rather than by a majority of winning trades.
 
-FVG showed a similar risk-adjusted profile, with a 3.53 Sharpe ratio, 1.29 profit factor, and -1.14% maximum drawdown.
-
-An important characteristic across the experiments is the relatively low win rate, ranging from 28.7% to 31.8%. This indicates that profitability is driven primarily by the relationship between winning and losing trade sizes rather than by a majority of winning trades.
-
-Research Considerations
-
-The large difference in trade counts is important when comparing these configurations. In particular, OB_DECISIONAL generates 2,636 trades, compared with 440–513 trades for several of the other configurations.
-
-Consequently, total return should not be interpreted independently of trading frequency, drawdown, transaction costs, and statistical reliability.
+The large difference in trade counts is important when comparing these configurations. In particular, OB_DECISIONAL generates 2,636 trades, compared with 440–513 trades for several of the other configurations. Consequently, total return should not be interpreted independently of trading frequency, drawdown, transaction costs, and statistical reliability.
 
 The current results are therefore better interpreted as evidence of different behavioral characteristics rather than as a definitive ranking of the strategies.
 
-Key Research Considerations
+## Key Research Considerations
 
 The experiments highlight several important considerations for systematic trading research:
 
@@ -116,7 +103,7 @@ Parameter and timeframe selection can introduce significant overfitting risk.
 
 The results should therefore be evaluated across longer periods and different market regimes before drawing conclusions about robustness.
 
-Backtesting Limitations
+## Backtesting Limitations
 
 The current experiments represent an initial research stage. Several aspects require further development before the results could be considered realistic representations of live trading:
 
@@ -132,7 +119,7 @@ Portfolio-level risk allocation
 
 In particular, the current one-month sample is too short to distinguish between a persistent structural effect and a result specific to the observed market conditions.
 
-Future Work
+## Future Work
 
 Extend the historical sample across multiple market regimes.
 
