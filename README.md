@@ -5,12 +5,12 @@ This project investigates systematic trading strategies based on trend indicator
 
 Rather than optimizing a single strategy for maximum historical return, the repository focuses on comparing different trading hypotheses, understanding their risk/return characteristics, and identifying parammeters that produce further investigation.
 
-The current experiments cover approximately one month of data for the first notebook and eight months for the second. Therefore the results should be interpreted as exploratory research rather than evidence of persistent future profitability.
+The current experiments cover approximately four months of data for the first notebook and eight months for the second. Therefore the results should be interpreted as exploratory research rather than evidence of persistent future profitability.
 
 ## Repository Structure
 * **README.md** - Project overview, methodology, results, and research conclusions.
-* **01_trend_indicators_backtest.ipynb** - Backtesting of trend-based strategies and indicator configurations.
-* **02_market_structure_backtest.ipynb** - Backtesting of liquidity sweeps and SMC-based market-structure strategies.
+* **01_trend_indicators_backtest.ipynb** - Backtesting of trend strategies and indicator configurations.
+* **02_market_structure_backtest.ipynb** - Backtesting of liquidity sweeps and SMC-based market structure strategies.
 
 ## Research & backtesting pipeline
 
