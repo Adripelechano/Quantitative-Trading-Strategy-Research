@@ -12,6 +12,12 @@ The current experiments cover approximately four months of data for the first no
 * **01_trend_indicators_backtest.ipynb** - Backtesting of trend strategies and indicator configurations.
 * **02_market_structure_backtest.ipynb** - Backtesting of liquidity sweeps and SMC-based market structure strategies.
 
+## Prerequisites 
+
+This project requires an active MetaTrader 5 terminal installed and running on a Windows OS, as it connects directly to the platform via the official MetaTrader 5 Python API to fetch historical price data and candlestick bars in real time.
+
+**Note for macOS / Linux Users:** The official `MetaTrader5` package is exclusively compatible with Windows operating systems. If you wish to run these backtests on macOS, Linux, or cloud environments like Google Colab, you will need to export the market data to a `.csv` file first and modify the data loading functions to read from that file.
+
 ## Research & backtesting pipeline
 
 The research follows a common experimental workflow:
