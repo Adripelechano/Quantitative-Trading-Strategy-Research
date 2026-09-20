@@ -5,7 +5,7 @@ This project investigates systematic trading strategies based on trend indicator
 
 Rather than optimizing a single strategy for maximum historical return, the repository focuses on comparing different trading hypotheses, understanding their risk/return characteristics, and identifying parammeters that produce further investigation.
 
-The current experiments cover approximately one month of data and should therefore be interpreted as exploratory research rather than evidence of persistent future profitability.
+The current experiments cover approximately one month of data for the first notebook and eight months for the second. Therefore the results should be interpreted as exploratory research rather than evidence of persistent future profitability.
 
 ## Repository Structure
 * **README.md** - Project overview, methodology, results, and research conclusions.
@@ -114,7 +114,7 @@ The current experiments represent an initial research stage. Several aspects req
 6. Multiple market regimes
 7. Portfolio risk allocation
 
-In particular, the current one-month sample is too short to distinguish between a persistent structural effect and a result specific to the observed market conditions.
+In particular, the current sample is too short to distinguish between a persistent structural effect and a result specific to the observed market conditions.
 
 ## Future work
 Based on the previous limitations, the future aims should be:
@@ -123,9 +123,6 @@ Based on the previous limitations, the future aims should be:
 3. Analyze parameter sensitivity and optimization with machine learning algorythms.
 4. Implement market structure filters, based on volatility and market behaviour.
 5. Investigate cross instrument correlations.
-
-Develop portfolio-level allocation methods.
-
-Evaluate statistical significance and confidence intervals.
+6. Develope portfolio allocation methods.
 
 The long-term objective is to move from single-strategy backtesting toward robust, portfolio-level quantitative research, while minimizing overfitting and maintaining a clear separation between in-sample hypothesis generation and out-of-sample validation.
