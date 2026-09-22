@@ -1,4 +1,4 @@
-# Quantitative Trading Strategy Research
+# Quantitative Backtesting Research
 
 ## Summary
 This project investigates systematic trading strategies based on trend indicators, market structure, and Smart Money Concepts (SMC) through historical backtesting.
